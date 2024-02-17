@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "projetalha_backend": {
+      "candid": "src/projetalha_backend/projetalha_backend.did",
+      "package": "projetalha_backend",
+      "type": "rust"
+    },
+    "projetalha_frontend": {
+      "dependencies": [
+        "projetalha_backend"
+      ],
+      "source": [
+        "src/projetalha_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "projetalha_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
